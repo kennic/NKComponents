@@ -22,6 +22,5 @@ A set of UI components:
   
   s.source_files = 'NKComponents/*.swift'
   s.frameworks = 'UIKit'
-  s.dependency 'NKButton'
   
 end

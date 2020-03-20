@@ -50,7 +50,7 @@ public class NKIconLabel: UILabel {
 		}
 	}
 	
-	init() {
+	public init() {
 		super.init(frame: .zero)
 		
 		imageView.contentMode = .scaleAspectFit

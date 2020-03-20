@@ -58,7 +58,7 @@ public class NKGridLineView: UIView {
 		}
 	}
 	
-	init() {
+	public init() {
 		super.init(frame: .zero)
 		
 		backgroundColor = .clear

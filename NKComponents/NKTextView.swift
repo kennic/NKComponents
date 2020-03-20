@@ -134,7 +134,7 @@ open class NKTextView: UITextView, UITextViewDelegate {
 	
 	// MARK: -
 	
-	override init(frame: CGRect, textContainer: NSTextContainer?) {
+	override public init(frame: CGRect, textContainer: NSTextContainer?) {
 		super.init(frame: frame, textContainer: textContainer)
 		
 		backgroundColor = .clear

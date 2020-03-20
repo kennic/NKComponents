@@ -4,18 +4,22 @@
 import PackageDescription
 
 let package = Package(
-    name: "NKComponents",
-    products: [
-        .library(
-            name: "NKComponents",
-            targets: ["NKComponents"]),
-    ],
-    dependencies: [
-         .package(url: "https://github.com/kennic/NKButton.git", from: "1.0.0"),
-    ],
-    targets: [
-        .target(
-            name: "NKComponents",
-            dependencies: [])
-    ]
+	name: "NKComponents",
+	platforms: [.iOS(.v8),
+				.macOS(.v10_14)],
+	products: [
+		.library(
+			name: "NKComponents",
+			targets: ["NKComponents"]),
+	],
+	dependencies: [
+//		.package(url: "https://github.com/kennic/NKButton.git", .branch("master")),
+	],
+	targets: [
+		.target(
+			name: "NKComponents",
+//			dependencies: ["NKButton"],
+			path: "NKComponents",
+			exclude: ["Example"])
+	]
 )

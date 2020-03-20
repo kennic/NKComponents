@@ -1,3 +1,3 @@
 # NKComponents
 
-A description of this package.
+A set of control components like NKTextField, NKTextView, NKIconLabel, NKGridLineView, NKImageView

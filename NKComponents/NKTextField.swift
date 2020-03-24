@@ -491,10 +491,6 @@ open class NKTextField: UITextField {
 		setNeedsDisplay()
 	}
 	
-    @objc private func clearText() {
-        text?.removeAll()
-        sendActions(for: .editingChanged)
-    }
 }
 
 extension UITextField {

@@ -139,7 +139,7 @@ open class NKTextField: UITextField {
 		}
 	}
 	
-	var isError: Bool = false {
+	public var isError: Bool = false {
 		didSet {
 			if isError {
 				showError()
@@ -150,14 +150,14 @@ open class NKTextField: UITextField {
 		}
 	}
 	
-	var errorColor: UIColor! = UIColor(red:1.0, green:0.164, blue:0.138, alpha:1.00)
-	var placeholderColor: UIColor? = nil {
+	public var errorColor: UIColor! = UIColor(red:1.0, green:0.164, blue:0.138, alpha:1.00)
+	public var placeholderColor: UIColor? = nil {
 		didSet {
 			setNeedsDisplay()
 		}
 	}
     
-    var placeholderFont: UIFont? = nil {
+    public var placeholderFont: UIFont? = nil {
         didSet {
             setNeedsDisplay()
         }

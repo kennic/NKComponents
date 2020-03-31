@@ -16,8 +16,8 @@ A set of UI components:
   s.author           = { 'Nam Kennic' => 'namkennic@me.com' }
   s.source           = { :git => 'https://github.com/kennic/NKComponents.git', :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/namkennic'
-  s.platform          = :ios, '8.0'
-  s.ios.deployment_target = '8.0'
+  s.platform          = :ios, '9.0'
+  s.ios.deployment_target = '9.0'
   s.swift_version = '4.2'
   
   s.source_files = 'NKComponents/*.swift'

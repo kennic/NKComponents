@@ -13,7 +13,7 @@ public enum NKIconLabelImageAlignment {
 	case right
 }
 
-public class NKIconLabel: UILabel {
+open class NKIconLabel: UILabel {
 	public let imageView = UIImageView()
 	public var spacing: CGFloat = 5.0 {
 		didSet {
@@ -57,7 +57,7 @@ public class NKIconLabel: UILabel {
 		addSubview(imageView)
 	}
 	
-	required init?(coder aDecoder: NSCoder) {
+	required public init?(coder aDecoder: NSCoder) {
 		fatalError("init(coder:) has not been implemented")
 	}
 	

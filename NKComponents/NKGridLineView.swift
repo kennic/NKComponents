@@ -8,7 +8,7 @@
 
 import UIKit
 
-public class NKGridLineView: UIView {
+open class NKGridLineView: UIView {
 	
 	public var lineColor: UIColor = .lightGray {
 		didSet {
@@ -65,11 +65,11 @@ public class NKGridLineView: UIView {
 		isUserInteractionEnabled = false
 	}
 	
-	required init?(coder aDecoder: NSCoder) {
+	required public init?(coder aDecoder: NSCoder) {
 		fatalError("init(coder:) has not been implemented")
 	}
 	
-	override public func draw(_ rect: CGRect) {
+	override open func draw(_ rect: CGRect) {
 		super.draw(rect)
 		
 		guard let context = UIGraphicsGetCurrentContext() else { return }

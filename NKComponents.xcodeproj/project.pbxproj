@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		235E402E247B97F200133AF5 /* NKTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235E402D247B97F200133AF5 /* NKTitleLabel.swift */; };
 		63FD938224238599001B7A48 /* NKComponents.h in Headers */ = {isa = PBXBuildFile; fileRef = 63FD938024238599001B7A48 /* NKComponents.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		63FD938924238664001B7A48 /* NKTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FD938824238664001B7A48 /* NKTextField.swift */; };
 		63FD938B24238699001B7A48 /* NKGridLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FD938A24238699001B7A48 /* NKGridLineView.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		235E402D247B97F200133AF5 /* NKTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NKTitleLabel.swift; sourceTree = "<group>"; };
 		63FD937D24238599001B7A48 /* NKComponents.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NKComponents.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		63FD938024238599001B7A48 /* NKComponents.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NKComponents.h; sourceTree = "<group>"; };
 		63FD938124238599001B7A48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -60,6 +62,7 @@
 				63FD939024238718001B7A48 /* NKTextView.swift */,
 				63FD938A24238699001B7A48 /* NKGridLineView.swift */,
 				63FD938C2423869F001B7A48 /* NKIconLabel.swift */,
+				235E402D247B97F200133AF5 /* NKTitleLabel.swift */,
 				63FD938E242386A4001B7A48 /* NKImageView.swift */,
 				63FD938024238599001B7A48 /* NKComponents.h */,
 				63FD938124238599001B7A48 /* Info.plist */,
@@ -150,6 +153,7 @@
 				63FD938924238664001B7A48 /* NKTextField.swift in Sources */,
 				63FD938B24238699001B7A48 /* NKGridLineView.swift in Sources */,
 				63FD938F242386A4001B7A48 /* NKImageView.swift in Sources */,
+				235E402E247B97F200133AF5 /* NKTitleLabel.swift in Sources */,
 				63FD939124238718001B7A48 /* NKTextView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

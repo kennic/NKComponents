@@ -11,51 +11,35 @@ import UIKit
 open class NKGridLineView: UIView {
 	
 	public var lineColor: UIColor = .lightGray {
-		didSet {
-			setNeedsDisplay()
-		}
+		didSet { setNeedsDisplay() }
 	}
 	
 	public var lineSize: CGFloat = 1.0 {
-		didSet {
-			setNeedsDisplay()
-		}
+		didSet { setNeedsDisplay() }
 	}
 	
 	public var lineDash: (phase: CGFloat, lengths: [CGFloat]) = (0, []) {
-		didSet {
-			setNeedsDisplay()
-		}
+		didSet { setNeedsDisplay() }
 	}
 	
 	public var numberOfHorizontalLines: Int = 0 {
-		didSet {
-			setNeedsDisplay()
-		}
+		didSet { setNeedsDisplay() }
 	}
 	
 	public var numberOfVerticalLines: Int = 0 {
-		didSet {
-			setNeedsDisplay()
-		}
+		didSet { setNeedsDisplay() }
 	}
 	
 	public var edgeInsets: UIEdgeInsets = .zero {
-		didSet {
-			setNeedsDisplay()
-		}
+		didSet { setNeedsDisplay() }
 	}
 	
 	override public var frame: CGRect {
-		didSet {
-			setNeedsDisplay()
-		}
+		didSet { setNeedsDisplay() }
 	}
 	
 	override public var bounds: CGRect {
-		didSet {
-			setNeedsDisplay()
-		}
+		didSet { setNeedsDisplay() }
 	}
 	
 	public init() {

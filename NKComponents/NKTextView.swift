@@ -86,9 +86,7 @@ open class NKTextView: UITextView, UITextViewDelegate {
 	}
 	
 	open var cornerRadius : CGFloat {
-		get {
-			return layer.cornerRadius
-		}
+		get { layer.cornerRadius }
 		set {
 			if layer.cornerRadius != newValue {
 				layer.cornerRadius = newValue

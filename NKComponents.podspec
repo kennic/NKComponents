@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'NKComponents'
-  s.version          = '1.1'
+  s.version          = '1.2'
   s.summary          = 'A set of UI components'
   s.description      = <<-DESC
 A set of UI components:

@@ -14,7 +14,7 @@ extension UIControl.State {
 
 extension UITextField {
 	
-	open func setRightImage(image: UIImage?) {
+	public func setRightImage(image: UIImage?) {
 		guard let image = image else {
 			rightView = nil
 			return
@@ -26,7 +26,7 @@ extension UITextField {
 		rightViewMode = .always
 	}
 	
-	open func setLeftImage(image: UIImage?) {
+	public func setLeftImage(image: UIImage?) {
 		guard let image = image else {
 			leftView = nil
 			return
@@ -106,27 +106,19 @@ open class NKTextField: UITextField {
 	public var contentEdgeInsets: UIEdgeInsets = .zero
 	
 	public var leftPadding: CGFloat = 0 {
-		didSet {
-			setNeedsLayout()
-		}
+		didSet { setNeedsLayout() }
 	}
 	
 	public var rightPadding: CGFloat = 10 {
-		didSet {
-			setNeedsLayout()
-		}
+		didSet { setNeedsLayout() }
 	}
 	
 	public var leftViewEdgeInsets: UIEdgeInsets = UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 0) {
-		didSet {
-			setNeedsLayout()
-		}
+		didSet { setNeedsLayout() }
 	}
 	
 	public var rightViewEdgeInsets: UIEdgeInsets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 10) {
-		didSet {
-			setNeedsLayout()
-		}
+		didSet { setNeedsLayout() }
 	}
 	
 	override open var isSecureTextEntry: Bool {
@@ -152,15 +144,11 @@ open class NKTextField: UITextField {
 	
 	public var errorColor: UIColor! = UIColor(red:1.0, green:0.164, blue:0.138, alpha:1.00)
 	public var placeholderColor: UIColor? = nil {
-		didSet {
-			setNeedsDisplay()
-		}
+		didSet { setNeedsDisplay() }
 	}
     
     public var placeholderFont: UIFont? = nil {
-        didSet {
-            setNeedsDisplay()
-        }
+		didSet { setNeedsDisplay() }
     }
 	
 	override public var placeholder: String? {
@@ -286,9 +274,7 @@ open class NKTextField: UITextField {
 	// MARK: -
 	
 	override open var frame: CGRect {
-		get {
-			return super.frame
-		}
+		get { super.frame }
 		set {
 			let sizeChanged = super.frame.size != newValue.size
 			super.frame = newValue
@@ -301,9 +287,7 @@ open class NKTextField: UITextField {
 	}
 	
 	override open var bounds: CGRect {
-		get {
-			return super.bounds
-		}
+		get { super.bounds }
 		set {
 			let sizeChanged = super.bounds.size != newValue.size
 			super.bounds = newValue

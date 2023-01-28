@@ -23,9 +23,7 @@ open class NKTitleLabel: UILabel {
 	}
 	
 	public var title: String? {
-		get {
-			return titleLabel.text
-		}
+		get { titleLabel.text }
 		set {
 			titleLabel.text = newValue
 			setNeedsLayout()
@@ -33,9 +31,7 @@ open class NKTitleLabel: UILabel {
 	}
 	
 	public var titleImage: UIImage? {
-		get {
-			return titleLabel.image
-		}
+		get { titleLabel.image }
 		set {
 			titleLabel.image = newValue
 			setNeedsDisplay()
@@ -44,9 +40,7 @@ open class NKTitleLabel: UILabel {
 	}
 	
 	public var titleFont: UIFont {
-		get {
-			return titleLabel.font
-		}
+		get { titleLabel.font }
 		set {
 			titleLabel.font = newValue
 			setNeedsLayout()
@@ -54,21 +48,13 @@ open class NKTitleLabel: UILabel {
 	}
 	
 	public var titleColor: UIColor {
-		get {
-			return titleLabel.textColor
-		}
-		set {
-			titleLabel.textColor = newValue
-		}
+		get { titleLabel.textColor }
+		set { titleLabel.textColor = newValue }
 	}
 	
 	public var titleTextAlignment: NSTextAlignment {
-		get {
-			return titleLabel.textAlignment
-		}
-		set {
-			titleLabel.textAlignment = newValue
-		}
+		get { titleLabel.textAlignment }
+		set { titleLabel.textAlignment = newValue }
 	}
 	
 	public var titleAlignment: NKTitleLabelAlignment = .left {
